@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TypeX - typing speed test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo"><img src="logo.png" alt="Xtype" /></div>
+        <div class="toggle">
+          <img src="Lightmode.png" alt="lightmodeicon" class="lightmode" />
+          <div class"toggle-container" onclick="darkMode()">
+          <div class="toggle-btn" onclick="this.classList.toggle('active')">
+            <div class="inner-circle"></div>
+          </div>
+        </div>
+        <img src="Darkmode.png" alt="Darkmodeicon" class="darkmode" />
+      </div>
+    </div>
+    <div class="preWrittentext"></div>
+    <div class="textboxarea">
+      <textarea id="userInput" placeholder="Type here."></textarea>
+    </div>
+    <div class="footer">By Adarsh Kumar Maheshwari</div>
+    <div class="sidebar">
+      <div id="time">
+        <h2 id="timeHead">TIME</h2>
+        <h3 id="counter">60</h3>
+        <button id="start">Start timeCounter.</button>
+        <div id="result">
+          <div class="rValue">
+            <h2>WPM</h2>
+            <h1 id="words">00</h1>
+          </div>
+
+          <div class="rValue">
+            <h2>CPM</h2>
+            <h1 id="characters">00</h1>
+          </div>
+
+          <div class="rValue">
+            <h2>ERRORS</h2>
+            <h1 id="error">00</h1>
+          </div>
+          <div class="rValue">
+            <h2>ACCURACY</h2>
+            <h1 id="accuracy">00</h1>
+          </div>
+        </div>
+      </div>
+      <div id="reset">
+        <button id="btn-reset" onclick="reset()">Reset</button>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
